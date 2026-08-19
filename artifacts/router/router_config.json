@@ -1,0 +1,8 @@
+{
+    "quality_threshold": 0.8,
+    "tier_1_threshold": 0.8,
+    "tier_2_threshold": 0.7,
+    "fallback_tier": "tier_3",
+    "routing_strategy": "minimum_predicted_capability",
+    "feature_type": "tfidf_plus_handcrafted"
+}
