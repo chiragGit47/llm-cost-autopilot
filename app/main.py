@@ -113,23 +113,17 @@ async def lifespan(
 settings = get_settings()
 
 app = FastAPI(
-
-    title=
-        settings.app_name,
-
-    version=
-        settings.app_version,
-
+    title=settings.app_name,
+    version=settings.app_version,
     description=(
         "Cost-aware LLM routing API using "
         "machine-learning model selection, "
         "selective quality verification, "
         "and automatic escalation."
     ),
-
-    lifespan=
-        lifespan,
+    lifespan=lifespan,
 )
+
 
 app.add_middleware(
     CORSMiddleware,
